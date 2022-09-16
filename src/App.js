@@ -7,50 +7,73 @@ import {
   AiFillGithub,
   AiOutlineBook,
   AiOutlineArrowDown,
+  AiOutlineBars,
 } from "react-icons/ai";
 import { MdWorkOutline } from "react-icons/md";
-
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { useState } from "react";
 
 function App() {
+
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
     <>
       <>
         <>
           <div id="#">
-            <div className="header top-0 left-0 z-50 h-auto w-full fixed animate-slidedown border-b px-44 border-white border-opacity-20 backdrop-blur backdrop-filter  ">
-              <div className="header-inner flex items-center justify-between pb-4 ">
-                <div className="homePage">
+            <nav className="  flex flex-wrap items-center justify-between top-0 left-0 z-50 h-auto w-full fixed animate-slidedown border-b px-0 border-white border-opacity-20 backdrop-blur backdrop-filter md:px-44  ">
+              <div className="container mx-auto flex flex-wrap items-center justify-between py-4">
+                <div className="w-full relative flex justify-between md:w-auto md:static md:block md:justify-start">
                   <h1 className="pt-3 text-5xl text-green-400 font-black ">
                     ALJAY.
                   </h1>
+                  <button
+                    className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button"
+                    onClick={() => setNavbarOpen(!navbarOpen)}
+                  >
+                    <i className="fas fa-bars">
+                      <AiOutlineBars />
+                    </i>
+                  </button>
                 </div>
-                <div className="pages relative flex flex-grow-2 justify-center align-middle pt-6 gap-7">
-                  <h1 className="text-l  text-white font-bold ">
-                    <a href="#">01. HOME</a>
-                  </h1>
-                  <h1 className="text-l  text-white font-bold">
-                    <a href="#aboutMe">02. ABOUT</a>
-                  </h1>
-                  <h1 className="text-l  text-white font-bold ">
-                    <a href="#mySkills">03. SKILLS </a>
-                  </h1>
+                <div
+                  className={
+                    "md:flex flex-grow flex-col md:flex-row items-end md:items-end justify-between pr-8 md:pr-0" +
+                    (navbarOpen ? " flex" : " hidden")
+                  }
+                  id="example-navbar-danger"
+                >
+                  <div/>
 
-                  <h1 className="text-l  text-white font-bold ">
-                    <a href="#myResume">04. RESUME</a>
-                  </h1>
-                </div>
-                <div className=" flex items-center justify-centermb-4 mt-4 rounded bg-green-400">
-                  <Button>
-                    <span className=" text-black hover:bg-white px-5 py-3">
-                      {" "}
-                      HIRE ME{" "}
-                    </span>
-                  </Button>
+                  <div className=" relative flex flex-grow-2 flex-col md:flex-row justify-center align-middle pt-6 gap-7">
+                    <h1 className="text-l  text-white font-bold ">
+                      <a href="#">01. HOME</a>
+                    </h1>
+                    <h1 className="text-l  text-white font-bold">
+                      <a href="#aboutMe">02. ABOUT</a>
+                    </h1>
+                    <h1 className="text-l  text-white font-bold ">
+                      <a href="#mySkills">03. SKILLS </a>
+                    </h1>
+
+                    <h1 className="text-l  text-white font-bold ">
+                      <a href="#myResume">04. RESUME</a>
+                    </h1>
+                  </div>
+                  {/* <div className=" flex items-center justify-center my-20 mx-10 rounded bg-green-400 md:mb-4 md:mt-4">
+                    <Button>
+                      <span className=" text-black hover:bg-white px-5 py-3">
+                        {" "}
+                        HIRE ME{" "}
+                      </span>
+                    </Button>
+                  </div> */}
                 </div>
               </div>
-            </div>
+            </nav>
           </div>
           <div className="bodyContainer">
             <div className="w-full h-screen  bg-gray-800   flex justify-between items-center pt-40 px-40 flex-col md:h-screen border-b  border-white border-opacity-20">
@@ -394,7 +417,7 @@ function App() {
                 <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-green-400" />
               </span>
             </div>
-            <div className="flex flex-row justify-center align-middle -mt-24">
+            <div className="flex flex-row justify-center align-middle -mt-24 ">
               <span className="opacity-5 text-white font-black text-9xl">
                 RESUME
               </span>
