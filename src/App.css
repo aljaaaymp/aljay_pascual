@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,7 +12,16 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
+
 }
+
+*{
+  transition: 150ms all;
+}
+  .animate-lefttoright {
+    animation: titleDeviderAnimation 3s ease-in-out infinite;
+  }
 
 .App-header {
   background-color: #282c34;
