@@ -46,7 +46,7 @@ function App() {
                   }
                   id="example-navbar-danger"
                 >
-                  <div/>
+                  <div />
 
                   <div className=" relative flex flex-grow-2 flex-col md:flex-row justify-center align-middle pt-6 gap-7">
                     <h1 className="text-l  text-white font-bold ">
@@ -145,7 +145,7 @@ function App() {
               </span>
             </div>
             <div className="flex flex-row justify-center align-middle -mt-24">
-              <span className="opacity-5 text-white font-black text-9xl">
+              <span className="opacity-5 text-white font-black text-9xl w-auto md:w-screen">
                 ABOUT
               </span>
             </div>
@@ -231,7 +231,7 @@ function App() {
             </span>
           </div>
           <div className="flex flex-row justify-center align-middle -mt-24">
-            <span className="opacity-5 text-white font-black text-9xl">
+            <span className="opacity-5 text-white font-black text-9xl w-auto md:w-screen">
               SKILLS
             </span>
           </div>
@@ -410,21 +410,19 @@ function App() {
         <div id="myResume">
           <div className="w-full   bg-gray-800  flex justify-start items-center flex-col   md:h-screen border-b  border-white border-opacity-20 py-20">
             <div className="flex flex-col justify-center align-middle ">
-              <span className="  text-white font-black text-4xl">
-                MY RESUME
-              </span>
+              <span className="text-white font-black text-4xl ">MY RESUME</span>
               <span className="relative z-10 inline-block h-1.5 w-32 overflow-hidden rounded-full bg-white bg-opacity-20 ml-8 mt-8 ">
                 <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-green-400" />
               </span>
             </div>
             <div className="flex flex-row justify-center align-middle -mt-24 ">
-              <span className="opacity-5 text-white font-black text-9xl">
+              <span className="opacity-5 text-white font-black text-9xl w-auto md:w-screen">
                 RESUME
               </span>
             </div>
 
             <div className="w-full gap-4 py-4 px-10 grid grid-cols-1 md:grid-cols-2 md:px-52 ">
-              <div className="flex flex-col justify-start items-start pl-20 md:items-end">
+              <div className="flex flex-col justify-start items-start pl-0 md:items-end md:pl-20">
                 <span className="text-white font-semibold text-2xl flex flex-row  gap-2">
                   {" "}
                   <AiOutlineBook size={28} style={{ color: "#00FA9A" }} />
@@ -492,7 +490,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-start items-start pl-20 ">
+              <div className="flex flex-col justify-start items-start pl-0 md:pl-20 ">
                 <span className="text-white font-semibold text-2xl flex flex-row  gap-2">
                   {" "}
                   <MdWorkOutline size={28} style={{ color: "#00FA9A" }} />
@@ -509,7 +507,7 @@ function App() {
                     <span className="text-white text-opacity-50">
                       04/2019 - 10/2019
                     </span>
-                    <span className="py-2 pr-64 mr-6 text-white text-opacity-50  ">
+                    <span className="py-2 pr-48 mr-6 text-white text-opacity-50 md:pr-64 ">
                       Alabang, Muntinlupa
                     </span>
                   </div>
@@ -517,7 +515,7 @@ function App() {
 
                 <div className="flex flex-row justify-center align-middle gap-5 ">
                   <div className="timeline-right relative border-l-0 border-b-4 border-white border-opacity-20  pl-8 flex flex-col md:border-l-4">
-                    <span className="text-green-300 font-semibold text-lg pr-80 mr-2">
+                    <span className="text-green-300 font-semibold text-lg pr-60 mr-2 md:pr-80">
                       {" "}
                       IT Specialist
                     </span>
