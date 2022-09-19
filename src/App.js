@@ -13,6 +13,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useState } from "react";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function App() {
 
@@ -46,20 +47,20 @@ function App() {
                   }
                   id="example-navbar-danger"
                 >
-                  <div/>
+                  <div />
 
                   <div className=" relative flex flex-grow-2 flex-col md:flex-row justify-center align-middle pt-6 gap-7">
-                    <h1 className="text-l  text-white font-bold ">
+                    <h1 className="text-l  text-white font-bold hover:border-b-4 border-green-300">
                       <a href="#">01. HOME</a>
                     </h1>
-                    <h1 className="text-l  text-white font-bold">
+                    <h1 className="text-l  text-white font-bold hover:border-b-4 border-green-300">
                       <a href="#aboutMe">02. ABOUT</a>
                     </h1>
-                    <h1 className="text-l  text-white font-bold ">
+                    <h1 className="text-l  text-white font-bold hover:border-b-4 border-green-300">
                       <a href="#mySkills">03. SKILLS </a>
                     </h1>
 
-                    <h1 className="text-l  text-white font-bold ">
+                    <h1 className="text-l  text-white font-bold hover:border-b-4 border-green-300">
                       <a href="#myResume">04. RESUME</a>
                     </h1>
                   </div>
@@ -77,7 +78,7 @@ function App() {
           </div>
           <div className="bodyContainer">
             <div className="w-full h-screen  bg-gray-800   flex justify-between items-center pt-40 px-40 flex-col md:h-screen border-b  border-white border-opacity-20">
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center animate-entrance items-center">
                 <div className=" w-40 h-40 rounded-full border-b border-4 border-green-400  bg-white mt-0 md:mt-20" />
                 <span className="text-white text-2xl md:text-4xl flex flex-col md:flex-row gap-2 font-black">
                   Hi, I am{" "}
@@ -99,31 +100,42 @@ function App() {
                   utilize my skills and experience in developing web-based
                   software.
                 </span>
-                <div className="flex flex-row mt-1 md:mt-10 gap-4 ">
-                  <AiFillFacebook
-                    size={42}
-                    style={{
-                      border: "1px solid",
-                      color: "white",
-                      opacity: "0.5",
-                    }}
-                  />
-                  <AiFillLinkedin
-                    size={42}
-                    style={{
-                      border: "1px solid",
-                      color: "white",
-                      opacity: "0.5",
-                    }}
-                  />
-                  <AiFillGithub
-                    size={42}
-                    style={{
-                      border: "1px solid",
-                      color: "white",
-                      opacity: "0.5",
-                    }}
-                  />
+                <div className="flex flex-row mt-1 md:mt-10 gap-4  ">
+                  <a href="https://www.facebook.com/ljymrnpscl" target="_blank">
+                    <AiFillFacebook
+                      size={42}
+                      style={{
+                        border: "1px solid",
+                        color: "white",
+                        opacity: "0.5",
+                        cursor: "pointer",
+                      }}
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/aljay-pascual-54524717b/"
+                    target="_blank"
+                  >
+                    <AiFillLinkedin
+                      size={42}
+                      style={{
+                        border: "1px solid",
+                        color: "white",
+                        opacity: "0.5",
+                        cursor: "pointer",
+                      }}
+                    />
+                  </a>
+                  <a href="https://github.com/aljaaaymp" target="_blank">
+                    <AiFillGithub
+                      size={42}
+                      style={{
+                        border: "1px solid",
+                        color: "white",
+                        opacity: "0.5",
+                      }}
+                    />
+                  </a>
                 </div>
               </div>
               <div className="mb-20">
@@ -137,15 +149,15 @@ function App() {
           </div>
         </>
         <div id="aboutMe">
-          <div className="w-full bg-gray-800 py-20 flex justify-start items-center flex-col border-b  border-white border-opacity-20 ">
-            <div className="flex flex-col justify-center align-middle ">
+          <div className="w-full bg-gray-800 py-20 flex justify-start items-center  flex-col border-b  border-white border-opacity-20 ">
+            <div className="flex flex-col justify-center align-middle  ">
               <span className="text-white font-black text-4xl ">ABOUT ME</span>
               <span className="relative z-10 inline-block h-1.5 w-32 overflow-hidden rounded-full bg-white bg-opacity-20 ml-8 mt-8 ">
-                <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-green-400" />
+                <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-left-to-right rounded-full bg-green-400" />
               </span>
             </div>
             <div className="flex flex-row justify-center align-middle -mt-24">
-              <span className="opacity-5 text-white flex font-black text-8xl md:text-9xl w-screen md:w-auto justify-center ">
+              <span className="opacity-5 text-white flex font-black text-8xl md:text-9xl  w-screen md:w-auto justify-center ">
                 ABOUT
               </span>
             </div>
@@ -227,7 +239,7 @@ function App() {
           <div className="flex flex-col justify-center align-middle ">
             <span className="text-white font-black text-4xl ">MY SKILLS</span>
             <span className="relative z-10 inline-block h-1.5 w-32 overflow-hidden rounded-full bg-white bg-opacity-20 ml-8 mt-8 ">
-              <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-green-400" />
+              <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-left-to-right rounded-full bg-green-400" />
             </span>
           </div>
           <div className="flex flex-row justify-center align-middle -mt-24">
@@ -412,7 +424,7 @@ function App() {
             <div className="flex flex-col justify-center align-middle ">
               <span className="text-white font-black text-4xl ">MY RESUME</span>
               <span className="relative z-10 inline-block h-1.5 w-32 overflow-hidden rounded-full bg-white bg-opacity-20 ml-8 mt-8 ">
-                <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-green-400" />
+                <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-left-to-right rounded-full bg-green-400" />
               </span>
             </div>
             <div className="flex flex-row justify-center align-middle -mt-24">
@@ -497,7 +509,7 @@ function App() {
                   Work Experience
                 </span>
                 <div className="flex flex-row justify-start align-middle gap-5 pt-5 ">
-                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
                     <span className="text-green-300 font-semibold text-lg   ">
                       Customer Service Representative
                     </span>
@@ -514,7 +526,7 @@ function App() {
                 </div>
 
                 <div className="flex flex-row justify-center align-middle gap-5 ">
-                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
                     <span className="text-green-300 font-semibold text-lg ">
                       {" "}
                       IT Specialist
@@ -534,7 +546,7 @@ function App() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center align-middle gap-5">
-                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
                     <span className="text-green-300 font-semibold text-lg  ">
                       {" "}
                       Junior Java Developer

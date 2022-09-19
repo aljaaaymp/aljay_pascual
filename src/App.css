@@ -16,12 +16,6 @@
 
 }
 
-*{
-  transition: 150ms all;
-}
-  .animate-lefttoright {
-    animation: titleDeviderAnimation 3s ease-in-out infinite;
-  }
 
 .App-header {
   background-color: #282c34;
