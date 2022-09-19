@@ -13,7 +13,6 @@ import { MdWorkOutline } from "react-icons/md";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useState } from "react";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 function App() {
 
