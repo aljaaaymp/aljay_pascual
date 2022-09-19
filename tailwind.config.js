@@ -10,7 +10,7 @@ module.exports = {
         },
         entranceAnimation: {
           "0%": { opacity: "0", transform: "translateY(-50px)" },
-          "100%": { opacity: "1", transform: "	transform: translateY(0)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
       animation: {
