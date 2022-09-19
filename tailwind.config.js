@@ -15,7 +15,7 @@ module.exports = {
       },
       animation: {
         "left-to-right": "titleDeviderAnimation 3s ease-in-out infinite",
-        entrance: "entranceAnimation  2s ease 0s 1 normal forwards",
+        "entrance": "entranceAnimation  2s ease 0s 1 normal forwards",
       },
     },
   },
