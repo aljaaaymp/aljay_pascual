@@ -23,11 +23,11 @@ function App() {
       <>
         <>
           <div id="#">
-            <nav className="  flex flex-wrap items-center justify-between top-0 left-0 z-50 h-auto w-full fixed animate-slidedown border-b px-0 border-white border-opacity-20 backdrop-blur backdrop-filter md:px-44  ">
-              <div className="container mx-auto flex flex-wrap items-center justify-between py-4">
+            <nav className="  flex flex-wrap justify-center  h-auto w-auto md:w-screen fixed  border-b px-0 border-white border-opacity-20 backdrop-blur md:px-44  ">
+              <div className="container  flex flex-wrap items-center justify-between py-4 w-screen ">
                 <div className="w-full relative flex justify-between md:w-auto md:static md:block md:justify-start">
-                  <h1 className="pt-3 text-5xl text-green-400 font-black ">
-                    ALJAY.
+                  <h1 className="pt-3 text-3xl md:text-5xl text-green-400 font-black ">
+                    PASCUAL.
                   </h1>
                   <button
                     className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -41,12 +41,12 @@ function App() {
                 </div>
                 <div
                   className={
-                    "md:flex flex-grow flex-col md:flex-row items-end md:items-end justify-between pr-8 md:pr-0" +
+                    "md:flex flex-grow flex-col md:flex-row items-start md:items-end justify-end  pr-8 md:pr-0" +
                     (navbarOpen ? " flex" : " hidden")
                   }
                   id="example-navbar-danger"
                 >
-                  <div />
+                  <div/>
 
                   <div className=" relative flex flex-grow-2 flex-col md:flex-row justify-center align-middle pt-6 gap-7">
                     <h1 className="text-l  text-white font-bold ">
@@ -78,8 +78,8 @@ function App() {
           <div className="bodyContainer">
             <div className="w-full h-screen  bg-gray-800   flex justify-between items-center pt-40 px-40 flex-col md:h-screen border-b  border-white border-opacity-20">
               <div className="flex flex-col justify-center items-center">
-                <div className=" w-40 h-40 rounded-full border-b border-4 border-green-400  bg-white mt-20" />
-                <span className="text-white text-4xl flex flex-col md:flex-row gap-2 font-black">
+                <div className=" w-40 h-40 rounded-full border-b border-4 border-green-400  bg-white mt-0 md:mt-20" />
+                <span className="text-white text-2xl md:text-4xl flex flex-col md:flex-row gap-2 font-black">
                   Hi, I am{" "}
                   <TypeAnimation
                     sequence={[
@@ -93,13 +93,13 @@ function App() {
                     style={{ color: "#00FA9A" }}
                   />
                 </span>
-                <span className="text-white opacity-80 text-center mt-2 text-lg">
+                <span className="text-white opacity-80 text-start md:text-center mt-2  text-sm md:text-lg ">
                   {" "}
                   Seeking a position as a Full Stack Developer where I can
                   utilize my skills and experience in developing web-based
                   software.
                 </span>
-                <div className="flex flex-row mt-10 gap-4">
+                <div className="flex flex-row mt-1 md:mt-10 gap-4 ">
                   <AiFillFacebook
                     size={42}
                     style={{
@@ -128,7 +128,7 @@ function App() {
               </div>
               <div className="mb-20">
                 <a href="#aboutMe">
-                  <button className="mt-24 text-white opacity-80 flex flex-row gap-1 text-xs animate-bounce">
+                  <button className="md:mt-24 mt-2 text-white opacity-80 flex flex-row gap-1 text-xs animate-bounce">
                     <AiOutlineArrowDown className="mt-1" /> SCROLL DOWN
                   </button>
                 </a>
@@ -138,14 +138,14 @@ function App() {
         </>
         <div id="aboutMe">
           <div className="w-full bg-gray-800 py-20 flex justify-start items-center flex-col border-b  border-white border-opacity-20 ">
-            <div className="flex flex-col justify-center align-middle">
+            <div className="flex flex-col justify-center align-middle ">
               <span className="text-white font-black text-4xl ">ABOUT ME</span>
               <span className="relative z-10 inline-block h-1.5 w-32 overflow-hidden rounded-full bg-white bg-opacity-20 ml-8 mt-8 ">
                 <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-green-400" />
               </span>
             </div>
             <div className="flex flex-row justify-center align-middle -mt-24">
-              <span className="opacity-5 text-white font-black text-9xl w-auto md:w-screen">
+              <span className="opacity-5 text-white flex font-black text-8xl md:text-9xl w-screen md:w-auto justify-center ">
                 ABOUT
               </span>
             </div>
@@ -231,7 +231,7 @@ function App() {
             </span>
           </div>
           <div className="flex flex-row justify-center align-middle -mt-24">
-            <span className="opacity-5 text-white font-black text-9xl w-auto md:w-screen">
+            <span className="opacity-5 text-white flex font-black text-9xl w-screen md:w-auto justify-center">
               SKILLS
             </span>
           </div>
@@ -415,8 +415,8 @@ function App() {
                 <span class="absolute left-0 top-0 inline-block h-full w-1.5 animate-lefttoright rounded-full bg-green-400" />
               </span>
             </div>
-            <div className="flex flex-row justify-center align-middle -mt-24 ">
-              <span className="opacity-5 text-white font-black text-9xl w-auto md:w-screen">
+            <div className="flex flex-row justify-center align-middle -mt-24">
+              <span className="opacity-5 text-white flex font-black text-8xl md:text-9xl w-screen md:w-auto justify-center">
                 RESUME
               </span>
             </div>
@@ -429,7 +429,7 @@ function App() {
                   Educational Qualification
                 </span>
                 <div className="flex flex-row justify-center align-middle gap-5 pt-5">
-                  <div className="timeline-right relative border-r-0 border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
                     <span className="text-green-300 font-semibold text-lg">
                       {" "}
                       High School
@@ -450,7 +450,7 @@ function App() {
                 </div>
 
                 <div className="flex flex-row justify-center align-middle gap-5 ">
-                  <div className="timeline-right relative border-r-0 border-b-4 border-white border-opacity-20  pl-8 flex flex-col md:border-r-4">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
                     <span className="text-green-300 font-semibold text-lg">
                       {" "}
                       College
@@ -470,7 +470,7 @@ function App() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center align-middle gap-5">
-                  <div className="timeline-right relative border-r-0 border-b-4 border-white border-opacity-20  pl-8 flex flex-col md:border-r-4">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
                     <span className="text-green-300 font-semibold text-lg">
                       {" "}
                       College
@@ -497,7 +497,7 @@ function App() {
                   Work Experience
                 </span>
                 <div className="flex flex-row justify-start align-middle gap-5 pt-5 ">
-                  <div className="timeline-right relative border-l-0 border-b-4 border-white border-opacity-20  pl-8 flex flex-col md:border-l-4">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
                     <span className="text-green-300 font-semibold text-lg   ">
                       Customer Service Representative
                     </span>
@@ -507,15 +507,15 @@ function App() {
                     <span className="text-white text-opacity-50">
                       04/2019 - 10/2019
                     </span>
-                    <span className="py-2 pr-48 mr-6 text-white text-opacity-50 md:pr-64 ">
+                    <span className="py-2 pr-60  text-white text-opacity-50  ">
                       Alabang, Muntinlupa
                     </span>
                   </div>
                 </div>
 
                 <div className="flex flex-row justify-center align-middle gap-5 ">
-                  <div className="timeline-right relative border-l-0 border-b-4 border-white border-opacity-20  pl-8 flex flex-col md:border-l-4">
-                    <span className="text-green-300 font-semibold text-lg pr-60 mr-2 md:pr-80">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
+                    <span className="text-green-300 font-semibold text-lg ">
                       {" "}
                       IT Specialist
                     </span>
@@ -527,15 +527,15 @@ function App() {
                       {" "}
                       02/2020 - 05/2022
                     </span>
-                    <span className="py-2 pr-2 text-white text-opacity-50 ">
+                    <span className="py-2 pr-64 mr-5  text-white text-opacity-50  ">
                       {" "}
                       MOA Pasay City
                     </span>
                   </div>
                 </div>
                 <div className="flex flex-row justify-center align-middle gap-5">
-                  <div className="timeline-right relative border-l-0 border-b-4 border-white border-opacity-20  pl-8 flex flex-col md:border-l-4">
-                    <span className="text-green-300 font-semibold text-lg pr-60 mr-1 ">
+                  <div className="timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
+                    <span className="text-green-300 font-semibold text-lg  ">
                       {" "}
                       Junior Java Developer
                     </span>
@@ -547,7 +547,7 @@ function App() {
                       {" "}
                       05/2022 - Present
                     </span>
-                    <span className="py-2 pr-2 text-white text-opacity-50 ">
+                    <span className="py-2 pr-56 mr-8 text-white text-opacity-50  ">
                       {" "}
                       Dasmariñas, Cavite
                     </span>
