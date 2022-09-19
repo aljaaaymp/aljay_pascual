@@ -13,6 +13,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useState } from "react";
+import resume from "../src/RESUME.pdf"
 
 function App() {
 
@@ -223,7 +224,13 @@ function App() {
                   </div>{" "}
                   <div className="mt-4">
                     <button className="text-black bg-green-300 px-8 py-4 rounded-md text-xs font-semibold ">
-                      DOWNLOAD RESUME
+                      <a
+                        href={resume}
+                        download="Pascual_Aljay_CV"
+                        target="_blank"
+                      >
+                        DOWNLOAD RESUME
+                      </a>
                     </button>
                   </div>
                 </div>
