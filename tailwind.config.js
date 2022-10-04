@@ -12,10 +12,16 @@ module.exports = {
           "0%": { opacity: "0", transform: "translateY(-50px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        scaleCenter: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(0.5)" },
+        },
       },
       animation: {
         "left-to-right": "titleDeviderAnimation 3s ease-in-out infinite",
         "entrance": "entranceAnimation  2s ease 0s 1 normal forwards",
+        "scale-center": "scaleCenter 1s ease 0s 1 normal forwards",
+        
       },
     },
   },
