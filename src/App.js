@@ -3,6 +3,8 @@ import isbn from "../src/images/ISBN.PNG";
 import movie from "../src/images/MOVIE.PNG";
 import pas from "../src/images/PAS.PNG";
 import { TypeAnimation } from "react-type-animation";
+import cover from "../src/images/cover.png"
+import profile from "../src/images/DP.png"
 import {
   AiFillFacebook,
   AiFillLinkedin,
@@ -65,14 +67,6 @@ function App() {
                       <a href="#myResume">04. RESUME</a>
                     </h1>
                   </div>
-                  {/* <div className=" flex items-center justify-center my-20 mx-10 rounded bg-green-400 md:mb-4 md:mt-4">
-                    <Button>
-                      <span className=" text-black hover:bg-white px-5 py-3">
-                         
-                        HIRE ME 
-                      </span>
-                    </Button>
-                  </div> */}
                 </div>
               </div>
             </nav>
@@ -80,7 +74,15 @@ function App() {
           <div className="bodyContainer">
             <div className="w-full h-screen  bg-gray-800   flex justify-between items-center pt-40 px-40 flex-col md:h-screen border-b  border-white border-opacity-20">
               <div className="flex flex-col justify-center animate-entrance items-center">
-                <div className=" w-40 h-40 rounded-full border-b border-4 border-green-400  bg-white mt-0 md:mt-20" />
+                <div
+                 className=" w-40 h-40 rounded-full border-b border-4 border-green-400  bg-white mt-0 md:mt-20">
+                  <img
+                    src={profile}
+                    alt="profile"
+                    className="h-full w-full rounded-full "
+  
+                  />
+                </div>
                 <span className="text-white text-2xl md:text-4xl flex flex-col md:flex-row gap-2 font-black">
                   Hi, I am
                   <TypeAnimation
@@ -171,7 +173,13 @@ function App() {
               </span>
             </div>
             <div className=" justify-start gap-6 mt-10 flex flex-col md:flex-row">
-              <div className="h-96 w-96  bg-white flex "></div>
+              <div className="h-96 w-96  bg-white flex ">
+                <img
+                src={cover}
+                alt="cover"
+                className="w-full h-full p-5"
+                />
+              </div>
 
               <div className="h-96 w-auto text-white">
                 <div className="flex flex-col gap-2 mt-10">
