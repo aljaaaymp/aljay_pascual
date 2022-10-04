@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/aljay_pascual/static/css/main.fcdeb78c.css",
-    "main.js": "/aljay_pascual/static/js/main.3865d5de.js",
+    "main.css": "/aljay_pascual/static/css/main.ca648f0d.css",
+    "main.js": "/aljay_pascual/static/js/main.1abebc74.js",
     "static/js/787.1afbbc24.chunk.js": "/aljay_pascual/static/js/787.1afbbc24.chunk.js",
     "static/media/MOVIE.PNG": "/aljay_pascual/static/media/MOVIE.d26da1201261d69a2e66.PNG",
     "static/media/ISBN.PNG": "/aljay_pascual/static/media/ISBN.58bf2250cb5cb06f9f22.PNG",
+    "static/media/cover.png": "/aljay_pascual/static/media/cover.bba11ad8dca28eb9efa3.png",
     "static/media/PAS.PNG": "/aljay_pascual/static/media/PAS.cbf8056eed0913b3acf0.PNG",
     "static/media/RESUME.pdf": "/aljay_pascual/static/media/RESUME.da97136fd1183b29e0ea.pdf",
+    "static/media/DP.png": "/aljay_pascual/static/media/DP.ae0d0452bba14587413e.png",
     "index.html": "/aljay_pascual/index.html",
-    "main.fcdeb78c.css.map": "/aljay_pascual/static/css/main.fcdeb78c.css.map",
-    "main.3865d5de.js.map": "/aljay_pascual/static/js/main.3865d5de.js.map",
+    "main.ca648f0d.css.map": "/aljay_pascual/static/css/main.ca648f0d.css.map",
+    "main.1abebc74.js.map": "/aljay_pascual/static/js/main.1abebc74.js.map",
     "787.1afbbc24.chunk.js.map": "/aljay_pascual/static/js/787.1afbbc24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcdeb78c.css",
-    "static/js/main.3865d5de.js"
+    "static/css/main.ca648f0d.css",
+    "static/js/main.1abebc74.js"
   ]
 }
