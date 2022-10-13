@@ -21,7 +21,6 @@ module.exports = {
         "left-to-right": "titleDeviderAnimation 3s ease-in-out infinite",
         "entrance": "entranceAnimation  2s ease 0s 1 normal forwards",
         "scale-center": "scaleCenter 1s ease 0s 1 normal forwards",
-        
       },
     },
   },
