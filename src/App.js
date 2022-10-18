@@ -6,6 +6,7 @@ import pas from "../src/images/PAS.PNG";
 import { TypeAnimation } from "react-type-animation";
 import cover from "../src/images/cover.png"
 import profile from "../src/images/DP.png"
+import jchag2 from "../src/images/jchag2.PNG"
 import {
   AiFillFacebook,
   AiFillLinkedin,
@@ -73,7 +74,7 @@ function App() {
             </nav>
           </div>
           <div className="bodyContainer">
-            <div className="w-full h-screen  bg-gray-800   flex justify-between items-center pt-40 px-40 flex-col md:h-screen border-b  border-white border-opacity-20">
+            <div className="w-screen h-screen  bg-gray-800   flex justify-between items-center pt-40 px-20 flex-col md:h-screen border-b  border-white border-opacity-20">
               <div className="flex flex-col justify-center animate-entrance items-center">
                 <div className=" w-40 h-40 rounded-full border-b border-4 border-green-400  bg-white mt-0 md:mt-20">
                   <img
@@ -172,8 +173,8 @@ function App() {
               </span>
             </div>
             <div className=" justify-start gap-6 mt-10 flex flex-col md:flex-row">
-              <div className="h-96 w-96  bg-white flex ">
-                <img src={cover} alt="cover" className="w-full h-full p-5" />
+              <div className="md:h-96 md:w-96 h-72 w-72 bg-white flex ">
+                <img src={cover} alt="cover" className=" w-full h-full p-5" />
               </div>
 
               <div className="h-96 w-auto text-white">
@@ -448,22 +449,22 @@ function App() {
                 <div className="flex flex-row justify-center align-middle gap-5 pt-5">
                   <div className="h-36 w-full timeline-right  relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
                     <span className="text-green-300 font-semibold text-lg">
-                      High School
+                      College
                     </span>
-                    <span className="text-white font-semibold">
-                      Eastern Bacoor Naitonal High School
+                    <span className="text-white font-semibold pr-28 mr-2">
+                      Technological University of the Philippines
                     </span>
                     <span className="text-white text-opacity-50">
-                      2010-2014
+                      2018-2019
                     </span>
-                    <span className="py-2 pr-2 text-white text-opacity-50 ">
-                      Blk 27 Lot 17 Queen's Ave, Queen Row, Bacoor, 4102 Cavite
+                    <span className="py-2 pr-2 text-white text-opacity-50 mr-20 ">
+                      BTTE - Computer Engineering Technology <br />
                     </span>
                   </div>
                 </div>
 
                 <div className="flex flex-row justify-center align-middle gap-5 ">
-                  <div className="md:h-36 w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
+                  <div className="md:h-36 w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col pt-5 md:border-r-4">
                     <span className="text-green-300 font-semibold text-lg">
                       College
                     </span>
@@ -481,16 +482,16 @@ function App() {
                 <div className="flex flex-row justify-center align-middle gap-5">
                   <div className="h-36 w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-r-4">
                     <span className="text-green-300 font-semibold text-lg">
-                      College
+                      High School
                     </span>
-                    <span className="text-white font-semibold pr-28 mr-2">
-                      Technological University of the Philippines
+                    <span className="text-white font-semibold">
+                      Eastern Bacoor Naitonal High School
                     </span>
                     <span className="text-white text-opacity-50">
-                      2018-2019
+                      2010-2014
                     </span>
-                    <span className="py-2 pr-2 text-white text-opacity-50 mr-20 ">
-                      BTTE - Computer Engineering Technology <br />
+                    <span className="py-2 pr-2 text-white text-opacity-50 ">
+                      Blk 27 Lot 17 Queen's Ave, Queen Row, Bacoor, 4102 Cavite
                     </span>
                   </div>
                 </div>
@@ -502,23 +503,23 @@ function App() {
                 </span>
                 <div className="flex flex-row justify-start align-middle gap-5 pt-5 ">
                   <div className="h-36 w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
-                    <span className="text-green-300 font-semibold text-lg   ">
-                      Customer Service Representative
+                    <span className="text-green-300 font-semibold text-lg  ">
+                      Junior Java Developer
                     </span>
                     <span className="text-white font-semibold">
-                      SYKES Enterprises, Inc.
+                      Norima Techonologies, Inc.
                     </span>
                     <span className="text-white text-opacity-50">
-                      04/2019 - 10/2019
+                      05/2022 - Present
                     </span>
-                    <span className="py-2 pr-60  text-white text-opacity-50  ">
-                      Alabang, Muntinlupa
+                    <span className="py-2 pr-56 mr-8 text-white text-opacity-50  ">
+                      Dasmariñas, Cavite
                     </span>
                   </div>
                 </div>
 
                 <div className="flex flex-row justify-center align-middle gap-5 ">
-                  <div className="h-36 w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
+                  <div className="h-36  w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
                     <span className="text-green-300 font-semibold text-lg ">
                       IT Specialist
                     </span>
@@ -534,18 +535,18 @@ function App() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center align-middle gap-5">
-                  <div className="h-36 w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
-                    <span className="text-green-300 font-semibold text-lg  ">
-                      Junior Java Developer
+                  <div className="h-36 pt-5 w-full timeline-right relative border-r-0 border-b-0 md:border-b-4 border-white border-opacity-20 pl-8 flex flex-col md:border-l-4">
+                    <span className="text-green-300 font-semibold text-lg   ">
+                      Customer Service Representative
                     </span>
                     <span className="text-white font-semibold">
-                      Norima Techonologies, Inc.
+                      SYKES Enterprises, Inc.
                     </span>
                     <span className="text-white text-opacity-50">
-                      05/2022 - Present
+                      04/2019 - 10/2019
                     </span>
-                    <span className="py-2 pr-56 mr-8 text-white text-opacity-50  ">
-                      Dasmariñas, Cavite
+                    <span className="py-2 pr-60  text-white text-opacity-50  ">
+                      Alabang, Muntinlupa
                     </span>
                   </div>
                 </div>
@@ -571,14 +572,10 @@ function App() {
             </div>
 
             <div className="grid md:grid-cols-4 gap-10 pt-20 ">
-              <a
-                href="https://www.jchagm.org"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.jchagm.org" target="_blank" rel="noreferrer">
                 <div className=" h-64 w-64 bg-white bg-opacity-5 ">
                   <img
-                    src={jchag}
+                    src={jchag2}
                     alt="isbn"
                     className="h-full w-full p-5 hover:animate-scale-center"
                   />
@@ -598,14 +595,14 @@ function App() {
                 </div>
               </a>
               <a
-                href="https://aljaaaymp.github.io/movie_project/"
+                href="https://aljaaaymp.github.io/jchag/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <div className=" h-64 w-64 bg-white bg-opacity-5 ">
                   <span>
                     <img
-                      src={movie}
+                      src={jchag}
                       alt="movie"
                       className="h-full w-full p-5 hover:animate-scale-center"
                     />
@@ -626,7 +623,7 @@ function App() {
                 </div>
               </a>
             </div>
-            <span className="text-white pt-5 px-10 md:px-56 md:w-screen">
+            <span className="text-white pt-5 px-5 text-center md:px-56 md:w-screen">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
